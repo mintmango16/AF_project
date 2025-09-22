@@ -1,0 +1,22 @@
+# --- ESM / ESMFold ---
+fair-esm==2.0.0
+dllogger @ git+https://github.com/NVIDIA/dllogger.git
+openfold @ git+https://github.com/aqlaboratory/openfold.git@4b41059694619831a7db195b7e0988fc4ff3a307
+
+biopython>=1.81,<1.85
+numpy>=1.23,<2.0
+pandas>=1.5,<2.2
+tqdm>=4.66
+omegaconf==2.3.0          # fair-esm 모듈이 사용하는 구성 라이브러리
+ml-collections==1.1.0
+dm-tree==0.1.9
+scipy>=1.10               # wheel 제공됨(파이썬3.10/리눅스), 추론에 충분
+
+# --- GraphBepi 학습/추론 ---
+pytorch-lightning==1.9.5
+torchmetrics==0.11.4
+tensorboard>=2.12,<2.22
+einops>=0.6               # (옵션) 모델/임베딩 편의
+packaging>=23
+
+boto3>=1.34               # (옵션) HealthOmics SDK 쓰려면
